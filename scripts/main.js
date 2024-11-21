@@ -26,7 +26,7 @@ async function open_terminal() {
 
   createCode("about me", "Who am i and what do i do.");
   createCode("projects", "My github page with my projects. Follow me there.");
-  createCode("resume", "My github page with my projects. Follow me there.");
+  createCode("resume", "View and download my professional resume.");
   createCode("all", "See all commands.");
   createCode("social -a", "All my social networks.");
 
@@ -83,6 +83,11 @@ async function getInputValue() {
     createText("Hi, my name is Ashwini ;)");
     createText(
       "I am a fullstack developer currently focused on the entire Javascript ecosystem. Mainly using the <span class='blue'>Node, React, Next, and Go </span> tech stack because it allows creating applications in a simple and productive way."
+    );
+  } else if (value === "resume") {
+    trueValue(value);
+    createText(
+      "<a href='https://drive.google.com/uc?export=download&id=1lQuAD7mbEi7MU5fCiOWsLpfzWF5GWIxg' target='_blank'><i class='fa-solid fa-file white'></i> drive.google.com/AshwiniParaye1</a>"
     );
   } else if (value === "social -a") {
     trueValue(value);
